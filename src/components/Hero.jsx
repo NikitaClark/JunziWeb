@@ -28,9 +28,9 @@ const Hero = () => {
         Innovators with Custom Software Solutions
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Our team of experts uses a methodology to identify the credit cards
-          most likely to fit your needs. We examine annual percentage rates,
-          annual fees.
+        "At our core, we excel at delivering affordable, 
+        high-quality custom software solutions with lightning-fast turnaround times. 
+        Your vision, our expertise, unbeatable results."
         </p>
       </div>
 

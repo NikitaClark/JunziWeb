@@ -22,13 +22,14 @@ const Business = () =>  (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        You do the business, <br className="sm:block hidden" /> we’ll handle
-        the money.
+      You focus on your business, <br className="sm:block hidden" /> we'll handle
+      the tech.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        With the right credit card, you can improve your financial life by
-        building credit, earning rewards and saving money. But with hundreds
-        of credit cards on the market.
+      "Let us handle the technical intricacies while you dedicate your time and energy to growing your business. 
+       With our expertise managing the tech side, you can stay laser-focused on seizing opportunities, 
+       expanding your reach, and achieving your business objectives with confidence."
+      
       </p>
 
       <Button styles={`mt-10`} />
