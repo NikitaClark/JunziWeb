@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star, quality, secured, affordability  } from "../assets";
 
 export const navLinks = [
   {
@@ -22,21 +22,21 @@ export const navLinks = [
 export const features = [
   {
     id: "feature-1",
-    icon: star,
+    icon: quality,
     title: "Quality",
     content:
       "Our custom software solutions are crafted with precision and rigor to ensure excellence.",
   },
   {
     id: "feature-2",
-    icon: shield,
+    icon: secured,
     title: "100% Secured",
     content:
       "We take proactive steps make sure your information and software are secure.",
   },
   {
     id: "feature-3",
-    icon: send,
+    icon: affordability,
     title: "Affordability",
     content:
       "We prioritize affordability, ensuring that our solutions meet your needs without breaking the bank.",
