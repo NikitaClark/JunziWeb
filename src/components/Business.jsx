@@ -3,15 +3,15 @@ import styles, { layout } from "../style";
 import Button from "./Button";
 
 const FeatureCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-col p-3 rounded-[20px] ${index !== features.length - 1 ? "mb-0" : "mb-0"} feature-card`}>
+  <div className={`flex flex-col p-3  rounded-[20px]  mb-2 ${index !== features.length - 1 ? "mb-0" : "mb-0"} feature-card`}>
     <div className={`w-[85px] h-[85px] rounded-full `}>
       <img src={icon} alt="star" className="w-[40%] h-[100%] object-contain" />
     </div>
-    <div className="flex-1 flex flex-col ml-0 mb-0">
-      <h4 className="font-poppins font-semibold text-white text-[26px] leading-[9.4px] mb-3">
+    <div className="flex-1 flex flex-col ml-0 mb-0 ">
+      <h4 className="font-poppins font-semibold text-white  text-[26px] leading-[9.4px] mb-3">
         {title}
       </h4>
-      <p className="font-poppins font-normal text-dimWhite text-[19px] leading-[24px]">
+      <p className="font-poppins font-normal text-dimWhite text-[19px] leading-[24px] ">
         {content}
       </p>
     </div>
