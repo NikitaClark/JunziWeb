@@ -1,0 +1,45 @@
+.our-team {
+    text-align: center;
+    padding: 20px;
+    background-color: #0d1117; /* Dark background color */
+    color: #ffffff;
+  }
+  
+  .our-team h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .team-member h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+  }
+  
+  .team-member .role {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .team-member .responsibilities {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #b0b0b0; /* Lighter color for responsibilities */
+  }

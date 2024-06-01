@@ -32,7 +32,11 @@ import csd from './csd.png';
 import mad from './mad.png';
 import pai from './pai.png';
 import qa from './qa.png';
-import ux from './ux.png'
+import ux from './ux.png';
+import alex from './alex.png';
+import anastasia from './anastasia.png';
+import max from './max.png';
+import nikita from './nikita.png';
 
 
 
@@ -72,5 +76,9 @@ export {
   pai,
   qa,
   ux,
+  alex,
+  anastasia,
+  max,
+  nikita
 
 };
