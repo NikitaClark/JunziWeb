@@ -2,6 +2,7 @@ import { max, nikita, anastasia, alex } from "../assets";
 import styles, { layout } from "../style";
 import Button from "./Button";
 import './CardDeal.css';
+import './CustomButton.css';
 
 const CardDeal = () => (
   <section className={layout.section}>
@@ -46,7 +47,14 @@ const CardDeal = () => (
           Web Designer <br />Design/Vision</p>
         </div>
         
+
+        
       </div>
+      <div>
+      <p className="font-poppins font-semibold text-white text-center text-[32px] leading-[29.4px] mb-3">
+        Let's assemble your team.</p>
+      <button className="schedule-button ">Schedule a Call</button>
+    </div>
     </div>
   </section>
 );

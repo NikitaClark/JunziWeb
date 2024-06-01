@@ -1,0 +1,17 @@
+.schedule-button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin:auto;
+    cursor: pointer;
+    border-radius: 4px;
+    position: absolute;
+    left: 45%;
+    right: 45%;
+
+  }
