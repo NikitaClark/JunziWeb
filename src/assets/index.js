@@ -37,6 +37,10 @@ import alex from './alex.png';
 import anastasia from './anastasia.png';
 import max from './max.png';
 import nikita from './nikita.png';
+import vasya from './vasya.png';
+import chekmyprofessor from './chekmyprofessor.png';
+import fitnest from './fitnest.png';
+import lifetimenatty from './lifetimenatty.png';
 
 
 
@@ -79,6 +83,10 @@ export {
   alex,
   anastasia,
   max,
-  nikita
+  nikita,
+  vasya,
+  chekmyprofessor,
+  fitnest,
+  lifetimenatty
 
 };

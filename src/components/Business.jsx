@@ -5,9 +5,9 @@ import Button from "./Button";
 const FeatureCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-col p-3  rounded-[20px]  mb-2 ${index !== features.length - 1 ? "mb-0" : "mb-0"} feature-card`}>
     <div className={`w-[85px] h-[85px] rounded-full `}>
-      <img src={icon} alt="star" className="w-[40%] h-[100%] object-contain" />
+      <img src={icon} alt="star" className="w-[50%] h-[100%] object-contain" />
     </div>
-    <div className="flex-1 flex flex-col ml-0 mb-0 ">
+    <div class="flex justify-between flex-col px-0 py-2 rounded-[20px]  max-w-[410px] md:mr-10 sm:mr-2 mr-0 my-0 feedback-card"> 
       <h4 className="font-poppins font-semibold text-white  text-[26px] leading-[9.4px] mb-3">
         {title}
       </h4>
@@ -25,14 +25,14 @@ const Business = () =>  (
       You focus on your business, <br className="sm:block hidden" /> we'll handle
       the tech.
       </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-10`}>
+      <p className={`${styles.paragraph} max-w-[570px] mt-28`}>
       "Let us handle the technical intricacies while you dedicate your time and energy to growing your business. 
        With our expertise managing the tech side, you can stay laser-focused on seizing opportunities, 
        expanding your reach, and achieving your business objectives with confidence."
       
       </p>
 
-      <Button styles={`mt-10`} />
+      <Button styles={`mt-20`} />
     </div>
 
     <div className={`${layout.sectionImg} flex-col`}>

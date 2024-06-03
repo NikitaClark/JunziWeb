@@ -4,7 +4,7 @@ import './Billing.css';
 
 const Billing = () => (
   <section id="product" className={layout.sectionReverse}>
-    <div className="flex-[1] flex flex-col justify-start mr-10">
+    <div className="flex-[1] flex flex-col justify-between position-absolute mr-10">
     <h1 className="flex-1 font-poppins font-semibold ss:text-[55px] text-[52px] text-white ss:leading-[100.8px] leading-[10px]">
       From Concept to Completion:<br/>Our Full-Stack Expertise.</h1>
       <div className="services">
