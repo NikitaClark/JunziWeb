@@ -10,7 +10,7 @@ const Billing = () => (
       <div className="services">
         <div className="flex justify-between flex-col px-10 py-12 rounded-[20px]  max-w-[450px] md:mr-10 sm:mr-5 mr-0 my-3 feedback-card">
         <div className={`flex-1 flex ${styles.flexCenter} md:my-5 my-0 relative`}>
-        <img src={csd} alt="billing" className="w-[20%] h-[60%]" />
+        <img src={csd} alt="billing" className="w-[16%] h-[60%]" />
         </div>
           <h2 className="font-poppins font-semibold text-white text-center text-[26px] leading-[29.4px] mb-3">
             Custom Software Development</h2>
@@ -19,7 +19,7 @@ const Billing = () => (
         </div>
         <div className="flex justify-between flex-col px-10 py-12 rounded-[20px]  max-w-[450px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
         <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-0 relative`}>
-        <img src={mad} alt="billing" className="w-[20%] h-[60%]" />
+        <img src={mad} alt="billing" className="w-[16%] h-[55%]" />
         </div>
           <h2 className="font-poppins font-semibold text-center text-white text-[26px] leading-[29.4px] mb-3">
             Mobile App Development</h2>
@@ -28,7 +28,7 @@ const Billing = () => (
         </div>
         <div className="flex justify-between flex-col px-10 py-12 rounded-[20px]  max-w-[450px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
         <div className={`flex-1 flex ${styles.flexCenter} md:my-5 my-0 relative`}>
-        <img src={qa} alt="billing" className="w-[20%] h-[120%]" />
+        <img src={qa} alt="billing" className="w-[18%] h-[85%]" />
         </div>
           <h2 className="font-poppins font-semibold text-white text-center text-[26px] leading-[29.4px] mb-8">
             QA and Testing</h2>
@@ -37,7 +37,7 @@ const Billing = () => (
         </div>
         <div className="flex justify-between flex-col px-10 py-12 rounded-[20px]  max-w-[450px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
         <div className={`flex-1 flex ${styles.flexCenter} md:my-5 my-0 relative`}>
-        <img src={ux} alt="billing" className="w-[20%] h-[100%]" />
+        <img src={ux} alt="billing" className="w-[16%] h-[75%]" />
         </div>
           <h2 className="font-poppins font-semibold text-white text-center text-[26px] leading-[29.4px] mb-3">
             UX/UI Design</h2>
@@ -55,7 +55,7 @@ const Billing = () => (
         </div>
         <div className="flex justify-between flex-col px-10 py-12 rounded-[20px]  max-w-[450px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
         <div className={`flex-1 flex ${styles.flexCenter} md:my-5 my-0 relative`}>
-        <img src={pai} alt="billing" className="w-[20%] h-[100%]" />
+        <img src={pai} alt="billing" className="w-[18%] h-[90%]" />
         </div>
           <h2 className="font-poppins font-semibold text-white text-center text-[26px] leading-[29.4px] mb-3">
             Platform and Infrastructure</h2>
