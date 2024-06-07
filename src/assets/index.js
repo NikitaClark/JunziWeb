@@ -41,6 +41,7 @@ import vasya from './vasya.png';
 import chekmyprofessor from './chekmyprofessor.png';
 import fitnest from './fitnest.png';
 import lifetimenatty from './lifetimenatty.png';
+import bostonBike from './bostonBike.png'
 
 
 
@@ -87,6 +88,7 @@ export {
   vasya,
   chekmyprofessor,
   fitnest,
-  lifetimenatty
+  lifetimenatty,
+  bostonBike
 
 };

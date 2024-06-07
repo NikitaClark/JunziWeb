@@ -1,0 +1,18 @@
+/* CloseButton.module.css */
+
+.closeButton {
+  background-color: #ff4c4c; /* красный фон */
+  color: white; /* белый текст */
+  border: none; /* убрать границу */
+  border-radius: 5px; /* скругленные углы */
+  padding: 10px 20px; /* отступы внутри кнопки */
+  cursor: pointer; /* курсор в виде руки */
+  font-size: 16px; /* размер шрифта */
+  transition: background-color 0.3s ease; /* плавный переход цвета фона */
+  display: block; /* сделать кнопку блочной */
+  margin: 5em auto 0 auto; /* выравнивание по центру с отступом сверху */
+}
+
+.closeButton:hover {
+  background-color: #ff1c1c; /* более темный красный при наведении */
+}

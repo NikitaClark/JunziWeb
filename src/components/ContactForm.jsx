@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { logo} from "../assets";
+import { logo } from "../assets";
 import Button from "./Button";
-
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -26,7 +25,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div style={{ maxWidth: '400px', margin: '0 auto', padding: '1em' }}>
+    <div style={{ maxWidth: '400px', margin: '0 auto', padding: '1em', justifyContent: 'center' }}>
       <img src={logo} alt="hoobank" className="w-[250px] h-[64px]" />
       <p >
         Thanks for your interest. Enter your name and details so we can connect
@@ -41,7 +40,7 @@ const ContactForm = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            style={{ width: '100%', padding: '0.5em' }}
+            style={{ width: '100%', padding: '0.5em', color: 'black' }}
             required
           />
         </div>
@@ -53,7 +52,7 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            style={{ width: '100%', padding: '0.5em' }}
+            style={{ width: '100%', padding: '0.5em', color: 'black' }}
             required
           />
         </div>
@@ -115,11 +114,11 @@ const ContactForm = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            style={{ width: '100%', padding: '0.5em' }}
+            style={{ width: '100%', padding: '0.5em', color: 'black' }}
             required
           />
         </div>
-        <Button styles={{ padding: '0.5em 1em' }}/>     
+        <Button styles={{ padding: '0.5em 1em' }} />
       </form>
     </div>
   );

@@ -19,22 +19,24 @@ const Billing = () => (
         </div>
         <div className="flex justify-between flex-col px-10 py-12 rounded-[20px]  max-w-[450px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
         <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-0 relative`}>
-        <img src={mad} alt="billing" className="w-[16%] h-[55%]" />
+        <img src={mad} alt="billing" className="w-[18%] h-[70%]" />
         </div>
           <h2 className="font-poppins font-semibold text-center text-white text-[26px] leading-[29.4px] mb-3">
             Mobile App Development</h2>
           <p className="font-poppins font-normal text-dimWhite text-[19px] leading-[24px]">
             Build performant, scalable, and secure mobile applications for iOS and Android devices.</p>
         </div>
-        <div className="flex justify-between flex-col px-10 py-12 rounded-[20px]  max-w-[450px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
-        <div className={`flex-1 flex ${styles.flexCenter} md:my-5 my-0 relative`}>
-        <img src={qa} alt="billing" className="w-[18%] h-[85%]" />
-        </div>
-          <h2 className="font-poppins font-semibold text-white text-center text-[26px] leading-[29.4px] mb-8">
-            QA and Testing</h2>
-          <p className="font-poppins font-normal text-dimWhite text-[19px] leading-[24px]">
-            Make your technology bulletproof with manual and automated testing.</p>
-        </div>
+        <div className="flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[450px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
+  <div className={`flex-1 flex ${styles.flexCenter} md:my-5 my-0 relative`}>
+    <img src={qa} alt="billing" className="w-[16%] h-[75%]" />
+  </div>
+  <h2 className="font-poppins font-semibold text-white text-center text-[26px] leading-[29.4px] mb-4">
+    QA and Testing
+  </h2>
+  <p className="font-poppins font-normal text-dimWhite text-[19px] leading-[24px] mt-0 mb-5">
+    Make your technology bulletproof with manual and automated testing.
+  </p>
+</div>
         <div className="flex justify-between flex-col px-10 py-12 rounded-[20px]  max-w-[450px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
         <div className={`flex-1 flex ${styles.flexCenter} md:my-5 my-0 relative`}>
         <img src={ux} alt="billing" className="w-[16%] h-[75%]" />

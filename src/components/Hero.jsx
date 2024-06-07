@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import styles from '../style';
+import styles from '../style'; // Импорт стилей для Hero
 import { group } from '../assets';
 import GetStarted from './GetStarted';
 import Modal from './Modal';
 import ContactForm from './ContactForm';
-
+import CloseButton from './CloseButton'; // Импорт нового компонента CloseButton
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -38,8 +38,8 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <img src={group} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
+      <div className={`flex-1 ${styles.flexCenter}  md:my-0 my-10 relative ${styles.imageContainer}`}>
+        <img src={group} alt="billing" className={`${styles.image}`} />
       </div>
 
       <div className={`ss:hidden ${styles.flexCenter}`}>
@@ -47,11 +47,8 @@ const Hero = () => {
       </div>
 
       <Modal show={isModalOpen} onClose={closeModal}>
-        {/* <h2 >
-          Welcome to Junzi Tech Solutions</h2>
-        <p>Your journey to innovative software solutions starts here.</p> */}
         <ContactForm />
-        <button onClick={closeModal} style={{ padding: '0.5em 1em', marginTop: '5em' }}>Close</button> 
+        <CloseButton onClick={closeModal} />
       </Modal>
     </section>
   );

@@ -1,3 +1,4 @@
+import React from 'react';
 import './Modal.css';
 
 const Modal = ({ show, onClose, children }) => {
@@ -6,11 +7,8 @@ const Modal = ({ show, onClose, children }) => {
   }
 
   return (
-    <div className="modal-backdrop">
-      <div className="modal-content">
-        <button className="modal-close" onClick={onClose}>
-          &times;
-        </button>
+    <div className="modal-backdrop" onClick={onClose}>
+      <div className="modal-content" onClick={e => e.stopPropagation()}>
         {children}
       </div>
     </div>

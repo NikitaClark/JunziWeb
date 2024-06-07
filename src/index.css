@@ -26,9 +26,9 @@
     #dee2fa 0.89%,
     #becbf5 17.23%,
     #9d9ef0 42.04%,
-    #7d9aeb 55.12%,
-    #4256af 71.54%,
-    #333dcf 100%
+    #2d4380 55.12%,
+    #455ab9 71.54%,
+    #362f96e3 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -143,6 +143,20 @@
 
 .container{
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto; 
   padding: 0 15px;
+}
+
+.getStartedButton {
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.getStartedButton:hover {
+  background-color: #ff6347;
 }

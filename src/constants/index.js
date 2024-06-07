@@ -1,5 +1,5 @@
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star, 
-quality, secured, affordability, lifetimenatty, fitnest, chekmyprofessor  } from "../assets";
+quality, secured, affordability, lifetimenatty, fitnest, chekmyprofessor, bostonBike  } from "../assets";
 
 export const navLinks = [
   {
@@ -191,8 +191,8 @@ export const clients = [
     id: "client-3",
     logo: lifetimenatty,
   },
-  // {
-  //   id: "client-4",
-  //   logo: dropbox,
-  // },
+  {
+    id: "client-4",
+    logo: bostonBike,
+  },
 ];
