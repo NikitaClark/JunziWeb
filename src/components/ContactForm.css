@@ -1,0 +1,9 @@
+.contact-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1em;
+    justify-content: center;
+    background-color: rgba(19, 16, 51, 0.85); 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }

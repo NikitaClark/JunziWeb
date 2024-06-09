@@ -38,8 +38,11 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className={`flex-1 ${styles.flexCenter}  md:my-0 my-10 relative ${styles.imageContainer}`}>
-        <img src={group} alt="billing" className={`${styles.image}`} />
+      <div className="relative flex-1">
+        <img src={group} alt="billing" className="w-full h-full relative z-5" />
+        <div className="absolute z-0 w-[0%] h-[0%] top-0 left-0 pink__gradient"/>
+        <div className="absolute z-1 w-[70%] h-[80%] rounded-full bottom-[10%] left-[10%] white__gradient"/>
+        <div className="absolute z-0 w-[50%] h-[50%] right-[5%] bottom-[5%] blue__gradient"/>
       </div>
 
       <div className={`ss:hidden ${styles.flexCenter}`}>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { logo } from "../assets";
 import Button from "./Button";
+import './ContactForm.css';  // Импортируем стили
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -25,9 +26,9 @@ const ContactForm = () => {
   };
 
   return (
-    <div style={{ maxWidth: '400px', margin: '0 auto', padding: '1em', justifyContent: 'center' }}>
+    <div className="contact-form-container">
       <img src={logo} alt="hoobank" className="w-[250px] h-[64px]" />
-      <p >
+      <p>
         Thanks for your interest. Enter your name and details so we can connect
         you with one of our team.
       </p>
