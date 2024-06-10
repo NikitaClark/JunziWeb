@@ -5,6 +5,7 @@ import GetStarted from './GetStarted';
 import Modal from './Modal';
 import ContactForm from './ContactForm';
 import CloseButton from './CloseButton'; // Импорт нового компонента CloseButton
+import './MovingText.css'; // Импорт стилей для двигающегося текста
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,8 +22,8 @@ const Hero = () => {
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
-            Empowering <br className="sm:block hidden" />{' '}
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[48px] text-white ss:leading-[100.8px] leading-[75px]">
+            Empowering <br/>
             <span className="text-gradient">Tomorrow's</span>{' '}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
@@ -30,7 +31,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
+        <h1 className="font-poppins font-semibold ss:text-[68px] text-[48px] text-white ss:leading-[100.8px] leading-[75px] w-full">
           Innovators with Custom Software Solutions
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
@@ -53,6 +54,18 @@ const Hero = () => {
         <ContactForm />
         <CloseButton onClick={closeModal} />
       </Modal>
+
+    
+      <div className="marquee-container">
+        <div className="marquee marquee-left ">
+          <span>C# Rails Node.js Java React .NET Python 
+            C# Rails Node.js Java React .NET Python </span>
+        </div>
+        <div className="marquee marquee-right">
+          <span>Angular PHP Android iOS Golang Vue.js C++ JavaScript Swift
+             Angular PHP Android iOS Golang Vue.js C++ JavaScript Swift</span>
+        </div>
+      </div>
     </section>
   );
 };
