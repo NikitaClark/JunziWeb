@@ -1,0 +1,95 @@
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+}
+
+.step-row.support {
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    width: 100%; /* Ensure the row spans the full width for positioning the long arrow */
+}
+
+.step {
+    position: relative;
+    flex: 1;
+    max-width: 150px;
+    min-width: 150px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.step img.step-image {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.step h2 {
+    margin-bottom: 10px;
+    font-size: 0.8em;
+}
+
+.step-text {
+    margin-top: 10px;
+    font-size: 0.7em;
+    font-weight: normal;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin: 0 10px;
+    margin-bottom: 50px;
+    
+}
+
+.arrow img {
+    width: 60px;
+    height: 30px;
+}
+
+.arrow-long {
+    position: absolute;
+    top: -5%; /* Позиционирование по вертикали на середине */
+    left: 80%; /* Позиционирование по горизонтали на середине */
+    transform: translate(-50%, -60%); /* Смещение на центр */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(40% - 60px); /* Adjust the width of the arrow span */
+}
+
+.long-arrow-image {
+    width: 100%; /* Width set to 100% to span the whole distance */
+    height: auto;
+}

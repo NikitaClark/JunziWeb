@@ -1,86 +1,65 @@
-import { apple, bill, google, ai, csd, mad, pai, qa, ux } from "../assets";
-import styles, { layout } from "../style";
-import './Billing.css';
+import React from 'react';
+import styles from "../style";
+import { square, arrow, longarrow } from '../assets';
+import './SoftwareDevelopmentCycle.css';
 
-const Cycle = () => (
-  <section id="product" className={layout.sectionReverse}>
-    <div className="flex-[1] flex flex-col justify-between relative mr-10">
-      <h1 className="font-poppins font-semibold ss:text-[55px] text-[52px] text-white ss:leading-[65px] leading-[60px] mb-10 text-center">
-        Our Software Development Cycle
-      </h1>
-      <p className="font-poppins font-normal text-dimWhite text-[22px] leading-[24px] text-center">
-      We have a methodical approach for both simple and complex projects.<br/> By embracing Agile principles and utilizing Scrum and Kanban frameworks, our dedicated team ensures we consistently deliver exceptional apps on time.
-        </p>
-      <div className="services">
-        <div className="flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[450px] md:mr-10 sm:mr-5 mr-0 my-3 feedback-card">
-          <div className={`flex-1 flex ${styles.flexCenter} md:my-5 my-0 relative`}>
-            <img src={csd} alt="billing" className="w-[16%] h-[60%]" />
-          </div>
-          <h2 className="font-poppins font-semibold text-white text-center text-[26px] leading-[29.4px] mb-3">
-            Custom Software Development
-          </h2>
-          <p className="font-poppins font-normal text-dimWhite text-[19px] leading-[24px]">
-            Create custom software tailored for your unique needs, including front-end, and core back-end technology.
-          </p>
+const steps = [
+    { title: "Plan", number: "1", text: "Discover & define" },
+    { title: "Design", number: "2", text: "Create visuals" },
+    { title: "Build", number: "3", text: "Develop & construct" },
+    { title: "Beta", number: "4", text: "Test & train" },
+    { title: "Launch", number: "5", text: "Optimize & go live" },
+    { title: "Support", number: "6", text: "Monitor, evaluate & refine" }
+];
+
+const Cycle = () => {
+    return (
+        <div className="font-poppins font-semibold ss:text-[45px] text-[42px] text-white ss:leading-[55px] leading-[50px] mb-10 text-center">
+            <h1>Our Software Development Cycle</h1>
+            <p className="font-poppins font-normal text-dimWhite text-[17px] leading-[22px]">
+                We have a methodical approach for both simple and complex projects.
+                By embracing Agile principles and utilizing Scrum and Kanban frameworks, our dedicated team ensures we consistently deliver exceptional apps on time.
+            </p>
+            <div className="steps">
+                <div className="step-row">
+                    {steps.slice(0, 5).map((step, index) => (
+                        <React.Fragment key={step.number}>
+                            <div className="step">
+                                <h2>{step.title}</h2>
+                                <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-0 relative`}>
+                                    <img src={square} alt={step.title} className="step-image" />
+                                    <div className="step-number">{step.number}</div>
+                                </div>
+                                <div className="step-text">
+                                    <p>{step.text}</p>
+                                </div>
+                            </div>
+                            {index < 4 && (
+                                <div className="arrow">
+                                    <img src={arrow} alt="arrow" className="arrow-image" />
+                                </div>
+                            )}
+                        </React.Fragment>
+                    ))}
+                </div>
+                <div className="step-row support">
+                    <div className="arrow-long">
+                        <img src={longarrow} alt="long arrow" className="long-arrow-image" />
+                    </div>
+                    <div className="step">
+                        <h2>{steps[5].title}</h2>
+                        <div className={`flex-1 flex ${styles.flexCenter} md:my-5 my-0 relative`}>
+                            <img src={square} alt={steps[5].title} className="step-image" />
+                            <div className="step-number">{steps[5].number}</div>
+                        </div>
+                        <div className="step-text">
+                            <p>{steps[5].text}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div className="flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[450px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
-          <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-0 relative`}>
-            <img src={mad} alt="billing" className="w-[12%] h-[65%]" />
-          </div>
-          <h2 className="font-poppins font-semibold text-center text-white text-[26px] leading-[29.4px] mb-3">
-            Mobile App Development
-          </h2>
-          <p className="font-poppins font-normal text-dimWhite text-[19px] leading-[24px]">
-            Build performant, scalable, and secure mobile applications for iOS and Android devices.
-          </p>
-        </div>
-        <div className="flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[450px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
-          <div className={`flex-1 flex ${styles.flexCenter} md:my-5 my-0 relative`}>
-            <img src={qa} alt="billing" className="w-[16%] h-[75%]" />
-          </div>
-          <h2 className="font-poppins font-semibold text-white text-center text-[26px] leading-[29.4px] mb-4">
-            QA and Testing
-          </h2>
-          <p className="font-poppins font-normal text-dimWhite text-[19px] leading-[24px] mt-0 mb-5">
-            Make your technology bulletproof with manual and automated testing.
-          </p>
-        </div>
-        <div className="flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[450px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
-          <div className={`flex-1 flex ${styles.flexCenter} md:my-5 my-0 relative`}>
-            <img src={ux} alt="billing" className="w-[16%] h-[75%]" />
-          </div>
-          <h2 className="font-poppins font-semibold text-white text-center text-[26px] leading-[29.4px] mb-3">
-            UX/UI Design
-          </h2>
-          <p className="font-poppins font-normal text-dimWhite text-[19px] leading-[24px]">
-            Create beautiful, pixel-perfect, and easy-to-use designs that delight you and your users.
-          </p>
-        </div>
-        <div className="flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[450px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
-          <div className={`flex-1 flex ${styles.flexCenter} md:my-5 my-0 relative`}>
-            <img src={ai} alt="billing" className="w-[20%] h-[100%]" />
-          </div>
-          <h2 className="font-poppins font-semibold text-white text-center text-[26px] leading-[29.4px] mb-3">
-            AI and Data Science
-          </h2>
-          <p className="font-poppins font-normal text-dimWhite text-[19px] leading-[24px]">
-            Use leading AI, machine learning, and data engineering technologies to unlock business value.
-          </p>
-        </div>
-        <div className="flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[450px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
-          <div className={`flex-1 flex ${styles.flexCenter} md:my-5 my-0 relative`}>
-            <img src={pai} alt="billing" className="w-[18%] h-[90%]" />
-          </div>
-          <h2 className="font-poppins font-semibold text-white text-center text-[26px] leading-[29.4px] mb-3">
-            Platform and Infrastructure
-          </h2>
-          <p className="font-poppins font-normal text-dimWhite text-[19px] leading-[24px]">
-            Ensure applications are secure, fault tolerant, and highly available with our DevOps and Security engineers.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-);
+    );
+};
 
 export default Cycle;

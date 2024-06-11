@@ -42,6 +42,10 @@ import chekmyprofessor from './chekmyprofessor.png';
 import fitnest from './fitnest.png';
 import lifetimenatty from './lifetimenatty.png';
 import bostonBike from './bostonBike.png'
+import square from './square.png'
+import arrow from './arrow.png'
+import longarrow from './longarrow.png'
+import Devcycle from './Devcycle.png'
 
 
 
@@ -89,6 +93,10 @@ export {
   chekmyprofessor,
   fitnest,
   lifetimenatty,
-  bostonBike
+  bostonBike,
+  square,
+  arrow,
+  longarrow,
+  Devcycle,
 
 };

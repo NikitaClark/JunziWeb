@@ -55,15 +55,12 @@ const Hero = () => {
         <CloseButton onClick={closeModal} />
       </Modal>
 
-    
       <div className="marquee-container">
-        <div className="marquee marquee-left ">
-          <span>C# Rails Node.js Java React .NET Python 
-            C# Rails Node.js Java React .NET Python </span>
+        <div className="marquee marquee-left">
+          <span>C# Rails Node.js Java React .NET Python C# Rails Node.js Java React .NET Python </span>
         </div>
         <div className="marquee marquee-right">
-          <span>Angular PHP Android iOS Golang Vue.js C++ JavaScript Swift
-             Angular PHP Android iOS Golang Vue.js C++ JavaScript Swift</span>
+          <span>Angular PHP Android iOS Golang Vue.js C++ JavaScript Swift Angular PHP Android iOS Golang Vue.js C++ JavaScript Swift</span>
         </div>
       </div>
     </section>
