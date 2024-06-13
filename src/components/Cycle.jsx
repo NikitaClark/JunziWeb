@@ -16,9 +16,8 @@ const Cycle = () => {
     return (
         <div className="font-poppins font-semibold ss:text-[45px] text-[42px] text-white ss:leading-[55px] leading-[50px] mb-10 text-center">
             <h1>Our Software Development Cycle</h1>
-            <p className="font-poppins font-normal text-dimWhite text-[17px] leading-[22px]">
-                We have a methodical approach for both simple and complex projects.
-                By embracing Agile principles and utilizing Scrum and Kanban frameworks, our dedicated team ensures we consistently deliver exceptional apps on time.
+            <p className="font-poppins font-normal text-dimWhite text-[20px] leading-[22px] mt-5 mb-5">
+                We have a methodical approach for both simple and complex projects.By embracing Agile principles and utilizing <br/>Scrum and Kanban frameworks, our dedicated team ensures we consistently deliver exceptional apps on time.
             </p>
             <div className="steps">
                 <div className="step-row">
