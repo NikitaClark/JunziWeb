@@ -8,7 +8,8 @@ import Stats from "./Stats";
 import Footer from "./Footer";
 // import Testimonials from "./Testimonials";
 import Hero from "./Hero";
-import Cycle from "./Cycle"
+import Cycle from "./Cycle";
+import Reviews from "./Reviews";
 
 
 export {
@@ -22,6 +23,7 @@ export {
   Footer,
   // Testimonials,
   Cycle,
+  Reviews,
   Hero,
  
 };
